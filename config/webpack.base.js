@@ -18,10 +18,8 @@ module.exports={
     resolve: {
         alias: {
             'bootstrap':path.join(__dirname, '../bootstrap'),
-            'common': path.join(__dirname, '../common'),
             'data': path.join(__dirname, '../src/data'),
             'library': path.join(__dirname, '../library'),
-            'wecash': path.join(__dirname, '../wecash'),
             'components': path.join(__dirname, '../src/components'),
             'lang': path.join(__dirname, '../src/lang'),
             'pages': path.join(__dirname, '../src/pages'),
