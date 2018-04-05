@@ -1,0 +1,25 @@
+$colors: (
+        rgb(0, 0, 0),
+        rgb(103, 180, 68),
+        rgb(192, 34, 76),
+          //rgb(253, 185, 128),
+        rgb(82, 66, 165),
+        rgb(60, 107, 170),
+        rgb(0, 158, 61),
+        rgb(20, 106, 203)
+);
+
+$opacity: 0.5;
+
+@for $i from 1 through length($colors) {
+  $item: nth($colors, $i);
+  .color-#{$i} {
+    background-color: $item;
+    transition: font-size,background-color 0.5s,0.5s;
+    &:hover {
+      background-color: rgba($item, 0.5);
+      font-size: 1.25em;
+    }
+  }
+}
+

@@ -1,0 +1,53 @@
+
+#container{
+  min-height: 100%;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  background-image: url("/src/assets/metro_bg.png");
+  background-size: 100% 100%;
+}
+@font-face {font-family: "iconfont";
+  src: url('/src/assets/iconfont.eot?t=1522829283093'); /* IE9*/
+  src: url('/src/assets/iconfont.eot?t=1522829283093#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/src/assets/iconfont.ttf?t=1522829283093') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('/src/assets/iconfont.svg?t=1522829283093#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont", serif;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-category-4:before { content: "\e615"; }
+
+.icon-facebook:before { content: "\e6a5"; }
+
+.icon-category-3:before { content: "\e610"; }
+
+.icon-google:before { content: "\e8a0"; }
+
+.icon-school:before { content: "\ea63"; }
+
+.icon-category-2:before { content: "\e607"; }
+
+.icon-category-1:before { content: "\e670"; }
+
+.icon-search:before { content: "\e613"; }
+
+.icon-dictionary:before { content: "\e75d"; }
+
+.icon-wx:before { content: "\e609"; }
+
+.icon-disk:before { content: "\e64c"; }
+
+.icon-baidu:before { content: "\e621"; }
+
+.icon-category-5:before { content: "\e620"; }
+
+.icon-study:before { content: "\e63b"; }
+
+.icon-music:before { content: "\e619"; }
+
+.icon-github:before { content: "\e677"; }
+

@@ -1,0 +1,61 @@
+.container{
+  $height:2.4rem;
+  $border-color: rgba(20, 68, 255, 0.68);
+  position: relative;
+  display: flex;
+  height: #{$height+3}rem;
+  margin: 1.4rem 0;
+
+  input{
+    flex-grow: 1;
+    height: $height;
+    padding:0 0.8rem;
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    border-right: none;
+    background-color: rgb(238, 238, 238);
+    transition: background-color 0.5s;
+    &:focus{
+      background-color: #fff;
+    }
+  }
+  a{
+    width: 10rem;
+    height: $height;
+    line-height: $height;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    font-family: "iconfont", serif;
+    background-color: $border-color;
+
+  }
+  :global(.icon-search){
+    margin-right: 10px;
+  }
+
+
+  .list{
+    position: absolute;
+    left: 0;
+    top: $height;
+    z-index: 10;
+    display: none;
+    width: 100%;
+
+    background-color: #fff;
+    &>li{
+      $height:2.4rem;
+      height: $height;
+      padding: 0 0.8rem;
+      line-height: $height;
+      color: rgba(44,47,64,0.8);
+      &:hover{
+        background-color: #eeeeee;
+      }
+    }
+  }
+  input:focus+.list,.list:hover{
+    display: block;
+  }
+}

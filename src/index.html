@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="导航，导航网站" />
+    <title><%=htmlWebpackPlugin.options.title%></title>
+    <script>
+
+    </script>
+</head>
+<body>
+     <div id="container">
+
+     </div>
+     <%(htmlWebpackPlugin.options.library||[]).forEach((item)=>{%>
+        <script src="<%=item%>"></script>
+     <%})%>
+</body>
+</html>
