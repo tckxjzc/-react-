@@ -45,10 +45,10 @@ class Category extends Component {
             <ul style={{backgroundColor:data.listColor}} className={style.list}>
                 {data.list.map((item)=>{
                     return <li key={item.name} className={style.item}>
-                        <a target={'_blank'} className={this.colors[this.getColorIndex()]} href={item.url} >
+                        <a target={wbp.target} className={this.colors[this.getColorIndex()]} href={item.url} >
                             <img onError={(e)=>{
                                 e.target.src=require('assets/default.png');
-                            }} src={Url(item.url).getHost()+'/favicon.ico'} />
+                            }} src={new Url(item.url).getHost()+'/favicon.ico'} />
                             <span>{item.name}</span>
                         </a>
                     </li>

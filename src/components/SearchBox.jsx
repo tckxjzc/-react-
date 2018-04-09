@@ -17,7 +17,7 @@ class SearchBox extends Component {
         // this.hideList = this.hideList.bind(this);
         // this.showList = this.showList.bind(this);
         this.cb = 'addWordList_' + Math.floor(Math.random() * 10000);
-        this.wordUrl = Url('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su').setParams({
+        this.wordUrl = new Url('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su').setParams({
             csor: 1,
             josn: 1,
             req: 2,
@@ -34,7 +34,7 @@ class SearchBox extends Component {
     search() {
         let content = this.refs.input.value;
         if (content.replace(/\s/g, '')) {
-            window.open(Url('https://www.baidu.com/s').setParameter('wd', content).url, '_blank');
+            window.open(new Url('https://www.baidu.com/s').setParameter('wd', content).url, '_blank');
         }
     }
 

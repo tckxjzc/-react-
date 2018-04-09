@@ -4,6 +4,7 @@ let config=require('./config');
 let {dist,title,resourceOutput}=config;
 let baseConfig=require('./webpack.base');
 let utils=require('./utils');
+let webpack=require('webpack');
 module.exports=merge(baseConfig,{
     mode:'production',
     externals:{
@@ -39,6 +40,9 @@ module.exports=merge(baseConfig,{
                 'https://cdn.bootcss.com/react-dom/16.4.0-alpha.0911da3/umd/react-dom.production.min.js'
             ],
             filename:`${dist}/index.html`,
+        }),
+        new webpack.DefinePlugin({
+            "wbp.target":"'_self'"
         })
     ]
 

@@ -1,6 +1,6 @@
 let merge=require('webpack-merge');
 let HtmlWebpackPlugins=require('html-webpack-plugin');
-
+let webpack=require('webpack');
 let baseConfig=require('./config/webpack.base');
 let config=require('./config/config');
 let {dist,title,resourceOutput}=config;
@@ -31,6 +31,9 @@ module.exports=merge(baseConfig,{
             title:title,
             template: '../src/index.html',
             filename:`${dist}/index.html`,
+        }),
+        new webpack.DefinePlugin({
+            "wbp.target":"'_self'"
         })
     ]
 });

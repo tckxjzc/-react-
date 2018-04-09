@@ -20,7 +20,7 @@ class Index extends Component{
                     {
                         usually.map((item)=> {
                             let url=item.url.startsWith('https://')||item.url.startsWith('http://')?item.url:'https://'+item.url;
-                            return <li key={item.name} className={style.item}><a target={'_blank'} href={url} style={{backgroundColor:item.background,color:item.color}}>
+                            return <li key={item.name} className={style.item}><a target={wbp.target} href={url} style={{backgroundColor:item.background,color:item.color}}>
 
                                 <div  className={style.content} dangerouslySetInnerHTML={{__html:item.text}} >
                                 </div>
