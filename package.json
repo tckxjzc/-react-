@@ -8,6 +8,7 @@
   "devDependencies": {
     "autoprefixer": "^7.2.3",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.2",
     "babel-plugin-syntax-jsx": "^6.18.0",
     "babel-plugin-transform-object-assign": "^6.22.0",
@@ -23,6 +24,9 @@
     "bundle-loader": "^0.5.6",
     "css-loader": "^0.28.11",
     "del": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-react": "^7.7.0",
     "file-loader": "1.1.11",
     "html-webpack-plugin": "3.2.0",
     "node-sass": "^4.7.2",
@@ -42,8 +46,8 @@
     "es6-promise": "^4.2.4",
     "material-ui": "^1.0.0-beta.40",
     "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
     "react-router-dom": "^4.2.2",
     "whatwg-fetch": "^2.0.3"
   }

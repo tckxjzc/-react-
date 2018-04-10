@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "globals":{
+//    "require":true
+  },
+  "parserOptions": { "ecmaVersion": 2017 },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node":true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "no-unused-labels":"warn",
+    "no-unused-vars":"warn"
+  }
+}

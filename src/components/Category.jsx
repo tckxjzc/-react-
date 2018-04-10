@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import style from './category.scope.scss';
 import Url from 'library/tools/url';
 import colors from 'style/colors.scope.scss';
+import PropTypes from 'prop-types';
 class Category extends Component {
 
 
@@ -57,6 +58,9 @@ class Category extends Component {
         </div>
     }
 }
+Category.propTypes={
+    data:PropTypes.object.isRequired
+};
 
 
 export default Category;

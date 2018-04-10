@@ -33,7 +33,10 @@ module.exports={
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                loader: 'babel-loader',
+                use:[
+                    'babel-loader',
+                    'eslint-loader'
+                ],
                 include: [
                     path.resolve(__dirname, '../src'),
                     path.resolve(__dirname, '../library')
