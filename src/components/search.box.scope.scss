@@ -50,7 +50,7 @@
       padding: 0 0.8rem;
       line-height: $height;
       color: rgba(44,47,64,0.8);
-      &:hover{
+      &:hover,&.active{
         background-color: #eeeeee;
       }
     }

@@ -36,7 +36,7 @@ module.exports={
                 loader: 'babel-loader',
                 include: [
                     path.resolve(__dirname, '../src'),
-                    path.resolve(__dirname, '../common')
+                    path.resolve(__dirname, '../library')
                 ],
                 exclude: [
                     path.resolve(__dirname, "../node_modules"),
