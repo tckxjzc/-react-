@@ -36,8 +36,8 @@ module.exports=merge(baseConfig,{
             title:title,
             template: '../src/index.html',
             library:[
-                'https://cdn.bootcss.com/react/16.4.0-alpha.0911da3/umd/react.production.min.js',
-                'https://cdn.bootcss.com/react-dom/16.4.0-alpha.0911da3/umd/react-dom.production.min.js'
+                'https://cdn.bootcss.com/react/16.3.1/umd/react.production.min.js',
+                'https://cdn.bootcss.com/react-dom/16.3.1/umd/react-dom.production.min.js'
             ],
             filename:`${dist}/index.html`,
         }),

@@ -47,9 +47,13 @@ export default {
             name: 'CDNJS',
             url: 'https://cdnjs.com/'
         },
-        // {
-        //     name: '',
-        //     url: ''
-        // },
+        {
+            name: '菜鸟教程',
+            url: 'http://www.runoob.com/'
+        },
+        {
+            name:'Webpack',
+            url:'https://webpack.js.org/concepts/'
+        }
     ]
 };

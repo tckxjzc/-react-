@@ -59,3 +59,33 @@
     display: block;
   }
 }
+
+.radio{
+  margin-bottom: 1.4rem;
+  &>ul{
+    display: flex;
+    justify-content: center;
+    //background-color: #00a6cb;
+  }
+  li{
+    padding: 0 1rem;
+  }
+  label {
+    display: block;
+    padding: 0.5rem 0.8rem;
+    user-select: none;
+    color: #fff;
+    background-color: rgb(255, 189, 50);
+    border-radius: 0.5rem;
+
+  }
+  input{
+     display: block;
+     width: 0;
+     height: 0;
+     visibility: hidden;
+    &:checked+label{
+      background-color: rgb(255, 41, 100);
+    }
+   }
+}
