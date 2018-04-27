@@ -1,3 +1,4 @@
+//@flow
 import React,{Component} from 'react';
 import usually from 'data/usually';
 import style from './index.scope.scss';
@@ -10,7 +11,6 @@ import data from 'data/index';
 class Index extends Component{
     constructor(props){
         super(props);
-
     }
     render(){
         return <div className={style.container}>

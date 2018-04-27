@@ -47,7 +47,7 @@ class SearchBox extends Component {
             {
                 name: "词霸翻译",
                 getUlr: (content) => {
-                    return `http://www.iciba.com/` + encodeURIComponent(content).url;
+                    return `http://www.iciba.com/` + encodeURIComponent(content);
                 }
             },
             {
@@ -125,16 +125,26 @@ class SearchBox extends Component {
     keyPress(event) {
         // console.log(event.charCode || event.keyCode);
         if (event.charCode === 13 || event.keyCode === 13) {
-            if (this.state.selectedIndex !== -1) {
-                this.input.current.value = this.state.list[this.state.selectedIndex];
-            }
+            // if (this.state.selectedIndex !== -1) {
+            //     this.input.current.value = this.state.list[this.state.selectedIndex];
+            // }
             this.search();
         } else if (!this.inputFlag && this.state.list.length > 0) {
-            if ((event.charCode || event.keyCode) === 40) {
-                this.setState({selectedIndex: this.count.next()});
-            } else if ((event.charCode || event.keyCode) === 38) {
-                this.setState({selectedIndex: this.count.previous()});
+            let code=event.charCode || event.keyCode;
+            let index;
+            if(code===40||code===38){
+                if (code === 40) {
+
+                    index=this.count.next();
+
+                } else if (code === 38) {
+                    index=this.count.previous();
+                }
+                this.setState({selectedIndex:index});
+                this.input.current.value = this.state.list[index];
             }
+
+
         }
 
 
